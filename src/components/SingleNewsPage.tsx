@@ -21,7 +21,6 @@ export const SingleNewsPage = () => {
     useEffect(() => {
         if(article !== null){
             setIsLoading(false);
-            console.log(article);
         }
     }, [article])
 
@@ -54,7 +53,7 @@ export const SingleNewsPage = () => {
                         src={article.image_url}
                         alt='Image'
                         style={{
-                            width: '100%;'
+                            width: '100%'
                         }}
                     />
                     <p className="mt-3">{article.summary}</p>

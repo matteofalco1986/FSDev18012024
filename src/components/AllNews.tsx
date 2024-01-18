@@ -18,7 +18,6 @@ export const AllNews = () => {
     useEffect(() => {
         if (articles !== null) {
             setIsLoading(false)
-            console.log(articles)
         }
     }, [articles])
 
